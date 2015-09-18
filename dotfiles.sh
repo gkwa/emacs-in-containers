@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd ~/
+git init
+git remote rm origin 2>/dev/null
+
+git remote add origin git@github.com:taylormonacelli/dotfiles.git
+git fetch --prune
+git checkout --track --force origin/master
