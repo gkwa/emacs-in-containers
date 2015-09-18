@@ -10,3 +10,6 @@ git checkout --track --force origin/master
 
 git remote rm origin
 git remote add origin git@github.com:taylormonacelli/dotfiles.git
+
+# pull down elpa/melpa files based off whats in ~/.emacs
+emacs --daemon
